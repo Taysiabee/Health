@@ -1,0 +1,1025 @@
+@import 'reset';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #e5f4fa;
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+	text-align: center;
+	.logo{
+		width: 40%;
+		margin-top: 5%;
+	}
+	p{
+		text-align: center;
+		font-size: .8em;
+		margin-top: 5%;
+		@media screen and (min-width: 1024px){ //tab
+			font-size: 2.5em;
+		}
+	}
+}
+
+//----------------------------------------------------------//
+
+.hero{
+	position: relative;
+	text-align: center;
+
+	.animal{
+		position: absolute;
+		bottom: 5px;
+		width: 15%;
+		z-index: 5;
+	}
+
+	.donkey{
+		left: 1%;
+	}
+
+	.elephant{
+		right: 0;
+	}
+
+	.hospital{
+		position: relative;
+		z-index: 10;
+		margin-top: 10%;
+		width: 67vw;
+		@media screen and (min-width: 1024px){
+			width: 50%;
+		}
+	}
+}
+//----------------------------------------------------------//
+
+.reform{
+	margin-top: 5%;
+	text-align: center;
+	position: relative;
+
+	h1{
+		text-align: center;
+		font-size: .8em;
+		@media screen and (min-width: 1024px){
+			font-size: 2em;
+		}
+	}
+	.small-ekg{
+		position: absolute;
+	}
+}
+
+
+
+//-----------------------------//
+
+.difficult{
+	display: flex;
+	justify-content: space-between;
+	@media screen and (min-width: 1024px){
+		display: flex;
+		position: relative;
+	}
+
+	#pills-section{
+		position: absolute;
+		left: 40px;
+		top: 435px;
+			@media screen and (min-width: 1024px){
+				top: 116px;
+				width: 40px;
+				left: 180px;
+			}
+	}
+
+	.clipboard{
+		margin-left: 20%;
+		margin-top: 17%;
+			@media screen and (min-width: 1024px){
+				margin-top: 5%;
+				margin-left: 37%;
+				position: relative;
+			}
+	}
+
+	.clipboard-image{
+		width: 240px;
+			@media screen and (min-width: 1024px){
+				width: 291px;
+			}
+	}
+
+	.on-clipboard{
+		.some{
+			color: black;
+			position: absolute;
+			left: 130px;
+			top: 537px;
+				@media screen and (min-width: 1024px){
+					position: absolute;
+					top: 267px;
+					left: 419px;
+					font-size: 1.7em;
+				}
+		}
+		.the-numbers{
+			position: absolute;
+			right: 100px;
+			top: 565px;
+			color: #D94728;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.5em;
+				@media screen and (min-width: 1024px){
+					position: absolute;
+					top: 310px;
+					right: 418px;
+				}
+		}
+		.desire{
+			position: absolute;
+			top: 603px;
+			right: 104px;
+				@media screen and (min-width: 1024px){
+					position: absolute;
+					top: 350px;
+					right: 384px;
+					font-size: 1.5em;
+				}
+		}
+
+		.change{
+			position: absolute;
+			top: 638px;
+			right: 135px;
+			font-size: 1.5em;
+			text-transform: uppercase;
+			color: #D94728;
+			font-weight: bold;
+				@media screen and (min-width: 1024px){
+					padding: initial;
+					top: 396px;
+					right: 445px;
+					font-size: 1.7em;
+				}
+		}
+	}
+
+	#pills-two{
+		margin-top: 120px;
+		margin-right: 15px;
+			@media screen and (min-width: 1024px){
+				position: absolute;
+				right: 144px;
+				width: 40px;
+				top: 0px;
+			}
+	}
+}
+
+//-------------------------------------------------//
+
+.america-spends{
+	margin-left: 2%;
+	padding: 5%;
+
+	h2{
+		padding: 5%;
+		text-align: center;
+		font-size: 1.5em;
+		color: #042A2B;
+		font-weight: bold;
+		@media screen and (min-width: 1024px){
+			font-size: 4em;
+		}
+	}
+
+	p{
+		font-size: 1em;
+		text-align: center;
+		line-height: 26px;
+		@media screen and (min-width: 1024px){
+			font-size: 2em;
+			line-height: 42px;
+			margin-top: 10px;
+		}
+	}
+
+	.monies{
+		display: flex;
+		justify-content: space-between;
+		padding: 5%;
+		margin-right: -5%;
+		@media screen and (min-width: 1024px){
+			position: relative;
+			}
+
+		.uk{
+			width: 30%;
+			margin-right: 10%;
+			position: relative;
+		}
+
+		.uk-money-stack-1{
+			width: 25%;
+			opacity: 0;
+			margin-left: 3%;
+			position: absolute;
+			margin-top: 19%;
+			@media screen and (min-width: 1024px){
+				width: 18%;
+				top: 48px;
+				position: absolute;
+				left: 64px
+			}
+		}
+
+		.uk-money-stack-2{
+			width: 25%;
+			opacity: 0;
+			margin-right: 10%;
+			position: absolute;
+			margin-top: 23%;
+			@media screen and (min-width: 1024px){
+				width: 18%;
+				top: 39px;
+				position: absolute;
+				left: 64px
+			}
+		}
+
+	.uk-drops1{
+		animation: drop 3s ease forwards;
+	}
+
+	.uk-drops2{
+		animation: drop 2s ease forwards;
+	}
+
+	.double{
+		@media screen and (min-width: 1024px){
+			position: absolute;
+		}
+
+		// h3{
+		// 	font-size: 1.5em;
+		// 	font-weight: bold;
+		// 	line-height: 20px;
+		// 	color: yellow;
+		// 	text-align: center;
+		// 	margin-right: 32%;
+		// 	@media screen and (min-width: 1024px){
+		// 		font-size: 2.7em;
+		// 		font-weight: bold;
+		// 		line-height: 38px;
+		// 		color: #042A2B;
+		// 		text-align: center;
+		// 		margin-right: 0%;
+		// 	}
+		// }
+
+		span{
+			font-weight: bold;
+			font-size: 2.5em;
+			left: 37%;
+			color: #D94728;
+			position: absolute;
+			top: 22%;
+			@media screen and (min-width: 1024px){
+				top: 129px;
+				position: absolute;
+				left: 273px;
+				font-size: 6em;
+			}
+		}
+
+	}
+
+		.us{
+			width: 45%;
+			position: relative;
+			margin-left: -3%;
+			@media screen and (min-width: 1024px){
+				width: 45%;
+				position: relative;
+				margin-left: 10%;
+			}
+		}
+
+		.us-money-stack-1{
+			width: 25%;
+			margin-left: 54%;
+			position: absolute;
+			margin-top: 15%;
+			opacity: 0;
+			@media screen and (min-width: 1024px){
+				width: 20%;
+				position: absolute;
+				top: 48px;
+				left: 100px;
+			}
+
+		}
+
+		.us-money-stack-2{
+			width: 25%;
+			margin-left: 55%;
+			position: absolute;
+			margin-top: 19%;
+			opacity: 0;
+			@media screen and (min-width: 1024px){
+				width: 20%;
+				position: absolute;
+				top: 39px;
+				left: 83px;
+			}
+		}
+
+		.us-money-stack-3{
+			width: 25%;
+			margin-left: 56%;
+			position: absolute;
+			margin-top: 11%;
+			opacity: 0;
+			@media screen and (min-width: 1024px){
+				width: 20%;
+				position: absolute;
+				top: 144px;
+				left: 86px;
+			}
+		}
+
+		.us-money-stack-4{
+			width: 25%;
+			margin-left: 55%;
+			position: absolute;
+			margin-top: 7%;
+			opacity: 0;
+			@media screen and (min-width: 1024px){
+				width: 20%;
+				top: 211px;
+				position: absolute;
+				left: 90px;
+			}
+		}
+
+		.us-drops1{
+			animation: drop 5s ease forwards;
+
+		}
+
+		.us-drops2{
+			animation: drop 4s ease forwards;
+		}
+
+		.us-drops3{
+			animation: drop 3s ease forwards;
+		}
+
+		.us-drops4{
+			animation: drop 2s ease forwards;
+		}
+	}
+}
+
+.united-kingdom{
+	font-weight: bold;
+	margin-top: 10%;
+
+	h3{
+		@media screen and (min-width: 1024px){
+			text-align: center;
+			font-size: 4em;
+		}
+	}
+
+	p{
+		@media screen and (min-width: 1024px){
+			margin-top: 22px;
+			line-height: 42px;
+		}
+	}
+
+}
+	
+	.ekg{
+		background:url(../img/ekg.svg) repeat-x 0 / 60% auto;
+		height: 128px; /* this value is not important, just not zero */
+		animation: ani 10s linear infinite ;
+		margin-top: 10%;
+		@media screen and (min-width: 1024px){
+			height: 361px;
+		}
+	}
+
+
+.expensive-healthcare{	
+	margin-top: 10%;
+	span{
+		font-weight: bold;
+		font-size: 1.5em;
+		margin-left: 35%;
+		@media screen and (min-width: 1024px){
+			font-weight: bold;
+			font-size: 4em;
+			margin-left: 36%;
+			color: #042A2B;
+		}
+	}	
+
+	h3{
+		font-size: .8em;
+		padding: 5%;
+		text-transform: uppercase;
+		text-align: center;
+		@media screen and (min-width: 1024px){
+			font-size: 2em;
+			padding: 5%;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.three-reasons{
+	display: flex;
+	flex-direction: column;
+	@media screen and (min-width: 1024px){
+		flex-direction: column;
+		padding: 6%;
+		font-size: 2em;
+	}
+
+	.admin-costs{
+		background-color: white;
+		padding: 5%;
+		border-radius: 30px;
+		margin: auto;
+		width: 90%;
+
+		p{
+			text-align: center;
+		}
+		
+		.admin{
+			color: red;
+			font-weight: bold;
+			font-size: 1.5em;
+			text-align: center;
+			display: block;
+		}
+
+		.other-countries{
+			font-family: 'Fira Sans', sans-serif;
+			font-size: .7em;
+			display: block;
+			text-align: center;
+		}
+
+			.eight-percent{
+				color: red;
+				font-weight: bold;
+				font-size: 1.5em;
+				text-align: center;
+				display: block;
+				margin-top: 2%;	
+			}
+			
+			.three-percent{
+				color: red;
+				font-weight: bold;
+				display: block;
+				text-align: center;
+				font-size: 1.5em;
+			}
+	}
+
+	.treatment{
+		background-color: white;
+		margin-right: 5%;
+		padding: 6%;
+		border-radius: 30px;
+		margin: auto;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		width: 90%;
+		.treat{
+			color: red;
+			font-weight: bold;
+			font-size: 1.5em;
+			text-align: center;
+			display: block;
+		}
+
+		p{
+			text-align: center;
+			
+		}
+
+		.two-times{
+			color: red;
+			font-size: 1.5em;
+			font-weight: bold;
+			
+		}
+	}
+	
+	.top-selling{
+		background-color: white;
+		padding: 6%;
+		border-radius: 30px;
+		margin-left: 3%;
+	}
+
+		.top{
+			color: red;
+			font-weight: bold;
+			font-size: 1.5em;
+			text-align: center;
+			display: block;
+		}
+
+		p{
+			text-align: center;
+		}
+
+		.three-times{
+			color: red;
+			font-weight: bold;
+			font-size: 1.5em;
+			text-align: center;
+			display: block;
+		}
+}//end 3 reasons
+
+
+
+
+
+
+	
+	.money-falls.trigger{
+		display: flex;
+		flex-direction: column;
+		
+		.small-money{
+
+			.first-stack{
+			  margin-left: 10%;       
+			  position:absolute;
+			  top:30%;
+			  width:15%;
+			  padding:2em;
+			  background-color:green;
+			}
+		}
+
+		.big-money{
+			margin-left: 10%;
+			
+			.second-stack{
+			 position:absolute;
+			  top: 40%;
+			  width:15%;
+			  padding:2em;
+			  background-color:green;
+			}
+		}
+		
+	}
+
+.myalept{
+	.expensive{
+		text-align: center;
+		font-size: 1.5em;
+		padding: 5%;
+		font-weight: bold;
+		@media screen and (min-width: 1024px){
+			font-size: 4em;
+		}
+	}
+	.costs{
+		text-align: center;
+		@media screen and (min-width: 1024px){
+			font-size: 2em;
+		}
+	}
+}
+
+
+.expensive-meds{
+	margin-top: 10%;
+	position: relative;
+	@media screen and (min-width: 1024px){
+		position: relative;
+	}
+	.bottle{
+		width: 25%;
+		display: block;
+		margin: 0 auto; //INLINE ELEMENT
+		margin-bottom: 10%;
+		// margin-left: 35%;
+		// margin-top: 10%;
+	}
+
+	.banner{
+		position: absolute;
+		top: 38px;
+		width: 50%;
+		right: 26%;
+		transform: scale3d(1, 1, 1);
+		animation: rubberBand 5s infinite;
+		@media screen and (min-width: 1024px){
+			position: absolute;
+			top: 100px;
+			width: 50%;
+			right: 25%;
+			transform: scale3d(1, 1, 1);
+			animation: rubberBand 5s infinite;
+		}
+	}
+	// .banner:hover {
+	//   cursor: pointer;
+	//    -webkit-animation: rubberBand 0.9s;
+	// }
+
+	.banner-text{
+		position: relative;
+		bottom: 125px;
+		left: 130px;
+		color: #D94728;
+		font-size: 2em;
+		@media screen and (min-width: 1024px){
+			position: relative;
+			bottom: 315px;
+			left: 410px;
+			font-size: 4em;
+		}
+	}
+
+	.per-month{
+		position: absolute;
+		top: 100px;
+		right: 152px;
+		@media screen and (min-width: 1024px){
+			position: absolute;
+			top: 282px;
+			right: 431px;
+			font-size: 2em;
+		}
+
+	}
+
+	.leptin{
+		.deficiency{
+			text-align: center;
+			@media screen and (min-width: 1024px){
+				font-size: 2.5em;
+			}
+
+		}
+		.no-treatment{
+			text-align: center;
+			margin-bottom: 10%;
+			color: #D94728;
+			font-weight: bold;
+			margin-top: 3%;
+			text-transform: uppercase;
+			@media screen and (min-width: 1024px){
+				font-size: 2.5em;
+			}
+		}
+		
+	}
+}
+
+
+.meter-wrapper{
+	position: relative;
+	
+	.meter{
+		width: 40%;
+		margin: 0 auto;
+		display: block;
+		@media screen and (min-width: 1024px){
+			width: 50%;
+		}
+	}
+
+	.dial{
+		width: 18px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -10px;
+		animation: wave 1s alternate infinite ease-in-out;
+		transform-origin: 100%;
+		@media screen and (min-width: 1024px){
+			width: 60px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -25px
+		}
+		
+	}
+		
+}
+
+.american-household{
+	.twenty-percent{
+		color: #D94728;
+		text-align: center;
+		margin-top: 5%;
+		font-size: 3.5em;
+		font-weight: bold;
+		margin-bottom: 3%;
+		@media screen and (min-width: 1024px){
+		    font-size: 7em;
+		}
+	}
+
+	.households{
+		text-align: center;
+		margin-bottom: 5%;
+		text-transform: uppercase;
+		@media screen and (min-width: 1024px){
+		    font-size: 2.5em;
+		    margin-bottom: 2%;
+		}
+	}
+
+	.delinquent{
+	    text-align: center;
+	    text-transform: uppercase;
+	    font-size: 1.5em;
+	    font-weight: bold;
+	    color: #042A2B;
+	    margin-bottom: 2%;
+	    @media screen and (min-width: 1024px){
+		    font-size: 3.5em;
+		    margin-top: 4%;
+		}
+	}
+
+	.credit{
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 10%;
+		 @media screen and (min-width: 1024px){
+		    font-size: 2em;
+		}
+	}
+}
+
+.graph{
+	position: relative;
+	.graph-image{
+		width: 81%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.red-line{
+		position: absolute;
+		width: 50%;
+		top: 16px;
+		left: 75px;
+	}
+
+	.medical-costs{
+		text-align: center;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		color: #042A2B;
+		margin-top: 4%;
+		 @media screen and (min-width: 1024px){
+		    font-size: 2.3em;
+		}
+	}
+
+	.seventy-percent{
+		color: #D94728;
+		text-align: center;
+		font-size: 3em;
+		font-weight: bold;
+		padding: 7%;
+		text-transform: uppercase;
+		 @media screen and (min-width: 1024px){
+		    font-size: 7em;
+		}
+	}
+
+	.inflation{
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 20px;
+		font-size: 1.1em;
+		@media screen and (min-width: 1024px){
+			font-size: 2.3em;
+			line-height: 43px;
+			margin-top: -5%;
+		}
+
+		
+
+	}
+}
+
+.options{
+	margin-top: 50px;
+	.for-change{
+		text-transform: uppercase;
+	    text-align: center;
+	    font-size: 1.6em;
+	    font-weight: bold;
+	    color: #042A2B;
+	    font-family: 'Fira Sans', sans-serif;
+	    @media screen and (min-width: 1024px){
+	    	font-size: 3.5em;
+   			margin-top: 15%;
+	    }
+
+	        
+	}
+
+	.reform-options{
+		font-family: 'Fira Sans', sans-serif;
+		text-align: center;
+		margin-top: 1%;
+		text-transform: uppercase;
+		padding: 5%;
+		font-size: 1em;
+		line-height: 22px;
+		@media screen and (min-width: 1024px){
+			font-size: 2.7em;
+			line-height: 50px;
+			margin-top: -3%;
+		}
+
+	}
+}
+
+.link{
+	@media screen and (min-width: 1024px){
+		position: relative;
+	}
+	.bandaid{
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		position: relative;
+
+
+	}
+
+	p{
+		bottom: 172px;
+		left: 147px;
+		color: white;
+		text-transform: uppercase;
+		position: absolute;
+		font-weight: bold;
+		font-size: 1.3em;
+		margin-left: 8px;
+		@media screen and (min-width: 1024px){
+			position: absolute;
+			top: 80px;
+			left: 426px;
+			font-size: 3em;
+		}
+	}	
+}
+
+footer{
+	background-color: #4CA2B1;
+	padding: 7%;
+
+
+	.dev{
+		color: white;
+		margin-bottom: 1%;
+		font-weight: bold;
+		font-size: 1em;
+		@media screen and (min-width: 1024px){
+			font-size: 2em;
+		}
+	}
+
+	.design{
+		color: white;
+		margin-bottom: 2%;	
+		font-weight: bold;
+		@media screen and (min-width: 1024px){
+			font-size: 2em;
+		}
+	}
+
+	.copyright{
+		color: white;
+		font-size: .8em;
+		@media screen and (min-width: 1024px){
+			font-size: 1em;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+ @keyframes drop{
+	  0%{opacity: 0}
+	  100%{
+	  	opacity: 1;
+	  	transform: translateY(20px);
+	  }
+}
+
+
+@-webkit-keyframes pill-rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+
+@-webkit-keyframes pill-rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+@keyframes ani{
+	0%{background-position: 0 0;}
+	100%{background-position: 100vw 0;}
+}
+
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
+
+
+@keyframes wave {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
